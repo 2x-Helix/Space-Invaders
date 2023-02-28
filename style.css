@@ -1,0 +1,46 @@
+/* General */
+.hidden {
+    visibility: hidden;
+}
+
+/* Text */
+BODY, H2, H3, H4, H5, H6, TH, TD {
+font-family: arial, helvetica, sans-serif;
+}
+H1 {
+    font-size: 38px;
+    font-family: arial, helvetica, sans-serif;
+}
+.text {
+    fill: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+}
+.gameover {
+    fill: red;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 80px;
+}
+
+/* Objects */
+.ship {
+    fill: lawngreen;
+}
+.shields {
+    fill: lawngreen;
+}
+.shield {
+    fill: red;
+}
+.hole {
+    fill: rgb(41, 41, 36);
+}
+.bulletPlayer {
+    fill: white; 
+}
+.bulletAlien {
+    fill: white;
+}
+.alien {
+    fill: white;
+}

@@ -1,0 +1,47 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "lib": [
+          "es2019",
+          "DOM",
+          "DOM.Iterable"
+        ],
+        "target": "es2019",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "esModuleInterop": true,
+        "sourceMap": true,
+        "baseUrl": ".",
+        "incremental": true,
+        "noImplicitAny": true
+    },
+    "exclude": [
+      "node_modules"
+    ]
+}
+// {
+//   "compilerOptions": {
+//     "module": "CommonJS",
+//     "lib": ["DOM", "DOM.Iterable", "ESNext"],
+//     "noEmit": true,
+//     "target": "ES6",
+//     "esModuleInterop": true,
+//     "allowSyntheticDefaultImports": true,
+//     "strict": true,
+//     "moduleResolution": "node",
+//     "sourceMap": true,
+//     "baseUrl": ".",
+//     "incremental": true,
+//     "watch": true,
+//     "noImplicitAny": true,
+//     "outDir": "dist",
+//     "rootDir": "src",
+//   },
+//   "exclude": ["node_modules"],
+//   "include": ["src/**/*", "webpack.config.ts"],
+//   "ts-node": {
+//     "compilerOptions": {
+//       "module": "CommonJS"
+//     }
+//   }
+// }

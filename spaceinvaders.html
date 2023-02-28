@@ -1,0 +1,102 @@
+<html>
+
+<head>
+	<style>
+		@import url(style.css);
+
+		p.highlight {
+			color: red;
+		}
+
+		svg {
+			background-color: rgb(41, 41, 36);
+		}
+	</style>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1>Space Invaders</h1>
+	<div style="display: flex; flex-direction: row;">
+		<svg id="canvas" width="600" height="600" style="min-width: 600; min-height: 600;">
+			<!--Game objects-->
+			<g id="shield">
+				<polygon class="shields" transform="translate(50, 450)"
+					points="-40,25 -40,-15 -25,-25 25,-25 40,-15 40,25 25,25">
+				</polygon>
+				<polygon class="shields" transform="translate(175, 450)"
+					points="-40,25 -40,-15 -25,-25 25,-25 40,-15 40,25 25,25">
+				</polygon>
+				<polygon class="shields" transform="translate(300, 450)"
+					points="-40,25 -40,-15 -25,-25 25,-25 40,-15 40,25 25,25">
+				</polygon>
+				<polygon class="shields" transform="translate(425, 450)"
+					points="-40,25 -40,-15 -25,-25 25,-25 40,-15 40,25 25,25">
+				</polygon>
+				<polygon class="shields" transform="translate(550, 450)"
+					points="-40,25 -40,-15 -25,-25 25,-25 40,-15 40,25 25,25">
+				</polygon>
+			</g>
+			<g id="hole" />
+			<g id="bulletAlien" />
+			<g id="bulletPlayer" />
+			<g id="ship" transform="translate(300,550)">
+				<polygon class="ship" points="0,-20 -6,-10 -25,-10 -25,10 25,10 25,-10 6,-10">
+				</polygon>
+			</g>
+			<g id="ufo" />
+			<g id="alien" />
+			<!--Text-->
+			<text id="userScore" x="20" y="35" class="text" onclick="()=>{restarts.push(true)}"></text>
+			<text id="hiScore" x="20" y="65" class="text" onclick="()=>{restarts.push(true)}"></text>
+			<text id="restart" x="100" y="300" class="gameover hidden">Game Over</text>
+		</svg>
+		<div style="width: 600px; margin-left: 20px;;">
+			<hr />
+			<!--Table HTML from https://tgdwyer.github.io/asteroids/ -->
+			<div>
+				<h3>Controls</h3>
+				<table>
+					<tr>
+						<td><b>Move Left:</b></td>
+						<td>
+							<div id="ArrowLeft" class="key">&#8678;</div>
+						</td>
+					</tr>
+					<tr>
+						<td><b>Move Right:</b></td>
+						<td>
+							<div id="ArrowRight" class="key">&#8680;</div>
+						</td>
+					</tr>
+					<tr>
+						<td><b>Fire:</b></td>
+						<td>
+							<div id="Space" class="key" style="width:50px">Space</div>
+						</td>
+					</tr>
+					<tr>
+						<td><b>Restart:</b></td>
+						<td>
+							<div id="Space" class="key" style="width:50px">r</div>
+						</td>
+					</tr>
+				</table>
+				<br>
+				<hr />
+				<h3>Instructions</h3>
+				<p>
+					Shoot all aliens to proceed to the next level.
+					If you get hit by a bullet or the aliens reach the bottom, you die.
+					Shields can absorb hits from bullets, but they will disintegrate.
+					Shoot enemy bullets to destroy them. Shooting invaders will give you 10 points 
+					whilst shooting the ufo grants 50 points.
+				</p>
+				<hr />
+			</div>
+		</div>
+	</div>
+	<script src="./dist/spaceinvaders.js"></script>
+</body>
+
+</html>
