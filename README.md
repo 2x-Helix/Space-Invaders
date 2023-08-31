@@ -1,5 +1,5 @@
 # Space Invaders
-A space invaders clone programmed following a functional programming paradigm.
+A space invaders clone programmed following a functional programming paradigm completed as an assignment for Monash FIT2102 (S2. 2021) Programming Paradigms.
 
 **Prerequisites**
 Ensure the TypeScript compiler is installed and the RxJS library. 
